@@ -28,7 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "rest_framework",
     "corsheaders",
-    "insights_app"
+    "insights_app",
+    "localhost"
 ]
 
 

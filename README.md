@@ -70,8 +70,6 @@ Please complete the following tasks. Commit your changes frequently with clear m
 
 1.  Ensure all your changes are committed to your local Git repository.
 2.  Create a patch file from your commits: `git format-patch origin/main --stdout > your_name_fund_insights.patch` (assuming `origin/main` is the base).
-3.  Alternatively, if you forked this on a platform like GitHub/GitLab, push your changes to a new branch and create a Pull Request.
-4.  Zip your entire project folder (excluding `node_modules` and `venv`) and send it back, or provide the link to your PR.
 
 ## Evaluation Criteria
 

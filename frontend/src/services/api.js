@@ -1,18 +1,8 @@
 import axios from 'axios';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000/api';
+const API_URL = "http://localhost:8000/api"; // Django dev server
 
-export const getArticles = async () => {
-  const response = await axios.get(`${API_BASE}/articles/`);
-  return response.data;
-};
-
-export const getArticle = async (id) => {
-  const response = await axios.get(`${API_BASE}/articles/${id}/`);
-  return response.data;
-};
-
-export const addComment = async (articleId, comment) => {
-  const response = await axios.post(`${API_BASE}/articles/${articleId}/comments/`, comment);
-  return response.data;
-};
+export const getArticles = () => axios.get(`${API_URL}/articles/`);
+export const getArticle = (id) => axios.get(`${API_URL}/articles/${id}/`);
+export const addComment = (articleId, commentData) =>
+  axios.post(`${API_URL}/articles/${articleId}/add_comment/`, commentData);

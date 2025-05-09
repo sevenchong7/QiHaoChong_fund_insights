@@ -1,4 +1,3 @@
-```markdown
 # Fund Insights Take-Home Assignment
 
 Welcome! This assignment is designed to simulate some common tasks you might encounter as a Full Stack Developer at our company. It involves analyzing an existing codebase, fixing some bugs, and implementing a new feature.
@@ -85,4 +84,3 @@ Please complete the following tasks. Commit your changes frequently with clear m
     *   Writing any unit tests (Django or Jest/React Testing Library) for your changes, if time permits.
 
 Good luck! We look forward to seeing your solution.
-```

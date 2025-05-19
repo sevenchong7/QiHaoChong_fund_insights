@@ -51,8 +51,10 @@ function ArticleList() {
               </small>
             )}
             {article.fund_name && (
-              <small style={{ marginLeft: "10px", color: "blue" }}>
-                Fund: {article.fund_name}
+              <small>
+                <Link to={`/funds/${article.fund_name}`} style={{ marginLeft: "10px", color: "blue" }}>
+                  Fund: {article.fund_name}
+                </Link>
               </small>
             )}
           </li>

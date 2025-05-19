@@ -22,9 +22,10 @@ function NewCommentForm({ articleId, onCommentAdded }) {
     }
 
     try {
-      const response = await addComment(articleId, {
+      const response = await addComment(articleId, { // fix the bad request 
+        article: articleId, // add the missing field 
         author_email: email,
-        text,
+        text: text,
       });
       onCommentAdded(response.data); // Notify parent component
       setEmail("");

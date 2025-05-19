@@ -21,4 +21,4 @@ class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         # 'publication_date' is intentionally missing here for Task 2
-        fields = ("id", "title", "content", "fund", "fund_name", "comments")
+        fields = ("id", "title", "content","publication_date", "fund", "fund_name", "comments") #add the missing publication_date into the fields to ensure the date is pass throught to frontend
